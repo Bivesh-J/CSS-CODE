@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: -999px;
+    transition: left 0.3s, top 0.3s;
+}
+
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+}
+
+.styled-image {
+    border: 2px solid #333;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.gallery-grid img:nth-child(odd) {
+    border-radius: 20px;
+}
